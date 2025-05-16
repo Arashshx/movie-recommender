@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.set_page_config(page_title="Movie Recommender Home", layout="wide")
 
@@ -12,8 +13,8 @@ st.markdown("""
 This project demonstrates a modular, comparative, and interactive recommender system using three mainstream techniques:
 
 1. **Content-Based Filtering**  
-2. **Collaborative Filtering (Item-Based KNN)**  
-3. **Hybrid Filtering** – a weighted combination of the two above  
+2. **Collaborative Filtering**  
+3. **Hybrid Filtering**
 
 Users can search for a movie title and receive top-5 similar recommendations, displayed with posters fetched from TMDB API. The project is built using Python, scikit-learn, and Streamlit.
 
@@ -50,15 +51,19 @@ The system uses the [MovieLens 100K dataset](https://grouplens.org/datasets/movi
 - User can adjust α using a slider in the Streamlit app
 
 ---
+""")
 
-## 📊 Evaluation Summary
+data = {
+    "Model Type": ["Content-Based", "Collaborative", "Hybrid (α = 0.5)"],
+    "Precision@5": [0.23, 0.40, 0.44],
+    "Recall@5": [0.028, 0.044, 0.058],
+    "F1@5": [0.047, 0.073, 0.096]
+}
+df_eval = pd.DataFrame(data)
+st.subheader("📊 Evaluation Summary")
+st.dataframe(df_eval, use_container_width=True)
 
-| Model Type        | Precision@5 | Recall@5 | F1@5  |
-|-------------------|-------------|----------|-------|
-| Content-Based     | 0.23        | 0.028    | 0.047 |
-| Collaborative (KNN)  | 0.40     | 0.044    | 0.073 |
-| Hybrid (α = 0.5)     | **0.44** | **0.058**| **0.096** |
-
+st.markdown("""
 > ✅ The Hybrid model provides the best overall recommendation performance.
 
 ---
