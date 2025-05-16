@@ -12,11 +12,11 @@ st.markdown("""
 
 This project demonstrates a modular, comparative, and interactive recommender system using three mainstream techniques:
 
-1. **Content-Based Filtering**  
-2. **Collaborative Filtering**  
-3. **Hybrid Filtering**
+1. [**Content-Based Filtering**](./content-based_filtering)  
+2. [**Collaborative Filtering**](./collaborative_filtering)  
+3. [**Hybrid Filtering**](./hybrid_filtering)
 
-Users can search for a movie title and receive top-5 similar recommendations, displayed with posters fetched from TMDB API. The project is built using Python, scikit-learn, and Streamlit.
+Users can search for a movie title and receive top-5 similar recommendations, displayed with posters fetched from TMDB API. The project is built using Python and Streamlit.
 
 ---
 
