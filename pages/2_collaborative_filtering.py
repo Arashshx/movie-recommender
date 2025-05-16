@@ -4,8 +4,8 @@ import requests
 from sklearn.neighbors import NearestNeighbors
 
 # Page configuration
-st.set_page_config(page_title="Item-Based Collaborative Recommender", layout="wide")
-st.title("🤝 Item-Based Collaborative Movie Recommender")
+st.set_page_config(page_title="Collaborative Recommender", layout="wide")
+st.title("🤝 Collaborative Movie Recommender")
 
 # Load TMDb API key from secrets
 TMDB_API_KEY = st.secrets["tmdb"]["key"]
