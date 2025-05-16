@@ -10,7 +10,7 @@ from sklearn.neighbors import NearestNeighbors
 # Page config
 # -------------------------------
 st.set_page_config(page_title="Hybrid Recommender", layout="wide")
-st.title("🎭 Hybrid Recommender System (Content + Collaborative)")
+st.title("🎭 Hybrid Movie Recommender (Content + Collaborative)")
 
 # -------------------------------
 # Load data
