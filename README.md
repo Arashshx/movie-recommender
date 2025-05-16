@@ -5,10 +5,10 @@
 This project demonstrates a modular, comparative, and interactive recommender system using three mainstream techniques:
 
 1. **Content-Based Filtering**  
-2. **Collaborative Filtering (Item-Based KNN)**  
-3. **Hybrid Filtering** – a weighted combination of the two above  
+2. **Collaborative Filtering**  
+3. **Hybrid Filtering**
 
-Users can search for a movie title and receive top-5 similar recommendations, displayed with posters fetched from TMDB API. The project is built using Python, scikit-learn, and Streamlit.
+Users can search for a movie title and receive top-5 similar recommendations, displayed with posters fetched from TMDB API. The project is built using Python and Streamlit.
 
 ## 📦 Dataset
 The system uses the [MovieLens 100K dataset](https://grouplens.org/datasets/movielens/latest/), including:
