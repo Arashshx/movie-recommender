@@ -6,7 +6,7 @@ from sklearn.neighbors import NearestNeighbors
 
 # Page configuration
 st.set_page_config(page_title="Content-Based Recommender", layout="wide")
-st.title("🎬 Content-Based Movie Recommender with Posters")
+st.title("🎬 Content-Based Movie Recommender")
 
 # Load API key from secrets
 TMDB_API_KEY = st.secrets["tmdb"]["key"]
